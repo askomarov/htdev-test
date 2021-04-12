@@ -55,5 +55,6 @@
   @media (min-width: $width-tablet+px) {
     visibility: visible;
     transform: scale(1);
+    margin-left: auto;
   }
 }

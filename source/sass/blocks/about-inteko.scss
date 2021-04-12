@@ -44,8 +44,11 @@
 }
 
 .about-inteko__top-text-block {
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: 1fr 24px 1fr;
 	grid-template-columns: 1fr 1fr;
+	-moz-column-gap: 24px;
 	column-gap: 24px;
 	// align-items: center;
 	position: relative;
@@ -55,11 +58,16 @@
 	margin-bottom: 45px;
 
 	@media (min-width: $width-tablet+px) {
+		display: -ms-grid;
 		grid-template-columns: 2fr 1fr 1fr;
+		-ms-grid-columns: 2fr 1fr 1fr;
 	}
 
 	@media (min-width: $width-desktop+px) {
+		display: -ms-grid;
 		grid-template-columns: 517px 1fr 1fr;
+		-ms-grid-columns: 517px 67px 1fr 67px 1fr;
+		-moz-column-gap: 67px;
 		column-gap: 67px;
 		margin-bottom: 88px;
 		padding: 0 60px;
@@ -69,10 +77,12 @@
 .about-inteko__title {
 	margin-bottom: 14px;
 	grid-column: 1/-1;
+	-ms-grid-column-span: 3;
 
 	@media (min-width: $width-desktop+px) {
 		letter-spacing: -1.2px;
 		margin-bottom: 20px;
+		-ms-grid-column-span: 4;
 	}
 }
 
@@ -81,9 +91,12 @@
 	max-width: 495px;
 	display: block;
 	align-self: start;
+	-ms-grid-row: 2;
+	-ms-grid-row-span: 2;
 
 	@media (min-width: $width-desktop+px) {
 		grid-row: initial;
+		-ms-grid-row: 2;
 	}
 }
 
@@ -128,17 +141,24 @@
 
 .about-inteko__stats--people {
 	margin-bottom: 10px;
-
+	-ms-grid-column: 3;
+	-ms-grid-row: 2;
 	@media (min-width: $width-desktop+px) {
 		margin: 0;
+		-ms-grid-column: 3;
+		-ms-grid-row: 2;
 	}
 }
 
 .about-inteko__stats--metrs {
 	padding-right: 8px;
+	-ms-grid-column: 3;
+	-ms-grid-row: 3;
 
 	@media (min-width: $width-desktop+px) {
 		padding-right: 0;
+		-ms-grid-column: 5;
+		-ms-grid-row: 2;
 	}
 }
 
@@ -191,6 +211,7 @@
 	height: 100%;
 	top: 0;
 	left: 0;
+	-o-object-fit: cover;
 	object-fit: cover;
 
 	@media (min-width: $width-desktop+px) {
