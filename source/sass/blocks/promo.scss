@@ -1,0 +1,68 @@
+.promo__container {
+  padding-top: 134px;
+  padding-bottom: 20px;
+  background: $main-background url("../img/promo.png");
+  background-size: 280px 174px;
+  background-position: 35px 0;
+  background-repeat: no-repeat;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 25px;
+    width: 2px;
+    height: 100%;
+    background: $decor-color;
+    @media (min-width: $width-desktop+px) {
+      left: 298px;
+    }
+  }
+  @media (min-width: $width-mobile+px) {
+    background-position: top right;
+    background-size: 75% 300px;
+  }
+  @media (min-width: $width-desktop+px) {
+    background-size: 920px 570px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+
+.promo__text-block {
+  padding: 35px 22px 39px 20px;
+  max-width: 280px;
+  background: $color_white;
+  position: relative;
+  z-index: 3;
+
+  @media (min-width: $width-desktop+px) {
+    padding: 48px 38px 51px 59px;
+    max-width: 550px;
+  }
+}
+.promo__title {
+  margin-bottom: 12px;
+
+  @media (min-width: $width-desktop+px) {
+    margin-bottom: 15px;
+  }
+}
+
+.promo__text {
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $width-desktop+px) {
+    margin-bottom: 12px;
+  }
+}
+
+.promo__img {
+  position: relative;
+  z-index: 2;
+}

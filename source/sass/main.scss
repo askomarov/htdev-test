@@ -1,0 +1,26 @@
+.main {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.main-title {
+  font-size: 24px;
+  line-height: 1.19;
+  color: $main-color;
+  font-weight: bold;
+
+  @media (min-width: $width-desktop+px) {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.main-text {
+  font-size: 12px;
+  line-height: 1.5;
+  color: $text-color;
+  @media (min-width: $width-desktop+px) {
+    font-size: 16px;
+  }
+}
+.main-sub-title {
+}

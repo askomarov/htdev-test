@@ -1,0 +1,20 @@
+.workers__container {
+  background: $main-background;
+  padding-top: 47px;
+  padding-bottom: 33px;
+
+  @media (min-width: $width-desktop+px) {
+    padding: 41px 0px 98px 60px;
+  }
+}
+
+.workers__title {
+  padding-left: 20px;
+  padding-right: 26px;
+  margin-bottom: 26px;
+
+  @media (min-width: $width-desktop+px) {
+    margin-bottom: 53px;
+    padding-left: 0;
+  }
+}

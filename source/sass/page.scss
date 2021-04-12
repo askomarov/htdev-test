@@ -1,0 +1,10 @@
+.page {
+  display: block;
+  height: auto;
+  padding: 196px 0 50px;
+
+  @media (min-width: $width-desktop+px) {
+    padding-top: 208px;
+    padding-bottom: 250px;
+  }
+}

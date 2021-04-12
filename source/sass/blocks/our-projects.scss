@@ -1,0 +1,121 @@
+.our-projects__container {
+  padding-top: 14px;
+  padding-bottom: 41px;
+  background: $main-background;
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 25px;
+    width: calc(100% - 25px);
+    height: 100%;
+    background: transparent;
+    border-bottom: 2px solid $decor-color;
+    border-left: 2px solid $decor-color;
+
+    @media (min-width: $width-desktop+px) {
+      width: calc(100% - 298px);
+      left: 298px;
+    }
+  }
+
+  @media (min-width: $width-desktop+px) {
+    padding-top: 98px;
+    padding-bottom: 0px;
+  }
+}
+
+.our-projects__title-block {
+  max-width: 696px;
+  padding: 0 0 0 30px;
+  margin-bottom: 23px;
+
+  @media (min-width: $width-desktop+px) {
+    padding: 0 30px;
+    margin-left: 300px;
+    margin-bottom: 92px;
+    max-width: 758px;
+  }
+}
+
+.our-projects__title {
+  margin-bottom: 13px;
+
+  @media (min-width: $width-desktop+px) {
+    margin-bottom: 15px;
+  }
+}
+
+.our-projects__text-block {
+  background: $color_white;
+  max-width: 280px;
+  margin-left: 20px;
+  padding: 23px 27px 23px 20px;
+  margin-top: -30px;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 5;
+
+  @media (min-width: $width-desktop+px) {
+    margin-top: 0;
+    max-width: 470px;
+    padding: 60px 43px 79px 50px;
+    margin-bottom: 129px;
+    margin-left: auto;
+  }
+}
+
+.our-project__subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  margin-bottom: 8px;
+
+  @media (min-width: $width-desktop+px) {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: -0.7px;
+  }
+}
+
+.our-projects__slider-wrapper {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $width-mobile+px) {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
+  @media (min-width: $width-desktop+px) {
+    margin: initial;
+    margin-bottom: 1px;
+    position: absolute;
+    top: 255px;
+    max-width: 920px;
+  }
+}
+
+.our-projects__footer {
+  max-width: 733px;
+  background: $main-background;
+  margin-left: 30px;
+  padding-right: 20px;
+
+  @media (min-width: $width-desktop+px) {
+    margin-left: auto;
+    padding: 52px 0 45px 26px;
+    margin-right: 213px;
+    border-bottom: 2px solid $decor-color;
+  }
+}

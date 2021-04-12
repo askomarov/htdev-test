@@ -1,0 +1,59 @@
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 35px;
+
+  @media (min-width: $width-desktop+px) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 298px;
+      width: 2px;
+      height: 100%;
+      background: $decor-color;
+    }
+  }
+
+  @media (min-width: $width-desktop+px) {
+    padding: 40px 60px;
+  }
+}
+
+.header__logo {
+  cursor: pointer;
+  background: $color_white;
+  width: 106px;
+  height: 30px;
+  position: relative;
+
+  @media (min-width: $width-desktop+px) {
+    width: 150px;
+    height: 40px;
+  }
+}
+
+.header__logo-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+}
+
+.header__lang {
+  cursor: pointer;
+  transform: scale(0);
+  visibility: hidden;
+  transition: all 0.5s ease 0s;
+
+  @media (min-width: $width-tablet+px) {
+    visibility: visible;
+    transform: scale(1);
+  }
+}

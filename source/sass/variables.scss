@@ -1,0 +1,66 @@
+$color_white: #ffffff;
+$main-color: #4764b0;
+$main-color-dark: #4664af;
+$text-color: #1e1e1e;
+$main-background: #f5f0f0;
+$decor-color: #d2c8c8;
+
+$dashed-line-desktop: linear-gradient(
+  90deg,
+  $main-color 0%,
+  $main-color 1%,
+  $color_white 1%,
+  $color_white 2%,
+  $main-color 2%,
+  $main-color 4%,
+  $color_white 4%,
+  $color_white 5%,
+  $main-color 5%,
+  $main-color 7%,
+  $color_white 7%,
+  $color_white 8%,
+  $main-color 8%,
+  $main-color 11%,
+  $color_white 11%,
+  $color_white 12%,
+  $main-color 12%,
+  $main-color 17%,
+  $color_white 17%,
+  $color_white 18%,
+  $main-color 18%,
+  $main-color 29%,
+  $color_white 29%,
+  $color_white 30%,
+  $main-color 30%,
+  $main-color 53%,
+  $color_white 53%,
+  $color_white 54%,
+  $main-color 54%,
+  $main-color 100%
+);
+
+$dashed-line-mobile: linear-gradient(
+  90deg,
+  $main-color 0%,
+  $main-color 3%,
+  $color_white 3%,
+  $color_white 5%,
+  $main-color 5%,
+  $main-color 12%,
+  $color_white 12%,
+  $color_white 14%,
+  $main-color 14%,
+  $main-color 23%,
+  $color_white 23%,
+  $color_white 25%,
+  $main-color 25%,
+  $main-color 38%,
+  $color_white 38%,
+  $color_white 40%,
+  $main-color 40%,
+  $main-color 58%,
+  $color_white 58%,
+  $color_white 60%,
+  $main-color 60%,
+  $main-color 100%
+);
